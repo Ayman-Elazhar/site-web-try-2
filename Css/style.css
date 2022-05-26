@@ -1,0 +1,465 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+.first-image{
+    width:100%;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.div-first-image{
+    margin-top: 50px;
+}
+
+.banner-text{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    color: rgb(133, 0, 0);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-text::after{
+    content:" ";
+    position: absolute;
+    display: block;
+    top: 80%;
+    right: 40%;
+    left: 25%;
+    width: 50%;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+}
+.header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    top: 0;
+    margin-top: 0px;
+}
+
+.hidden-button{
+    margin-left: -45px;
+    opacity: 0;
+
+}
+.Icon{
+    height:50px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-icon{
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.main-nav{
+    flex: 1;
+    text-align: right;
+}
+
+.main-nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.15ss;
+}
+
+.main-nav ul li a:hover {
+    color: lightpink;
+}
+
+.main-nav ul li a:active{
+    color: rgb(160, 7, 134);
+    opacity: 0.7;
+}
+
+.presentation-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top: 10px;
+    
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0,0,0,.2);
+}
+.manga-image{
+    height: 300px;
+    margin-top: 60px;
+    border-radius: 13px;
+}
+
+.paragraph{
+    color: #000;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.paragraph-2{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.h2-position{
+    text-align: center;
+    position: relative;
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+}
+
+.h2-position::after{
+    content:" ";
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: -10px;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(73, 69, 69) ;
+}
+
+.presentation-manga{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    column-gap: 50px;
+}
+
+.exemple-manga{
+    height: 400px;
+    border-radius: 8px;
+    margin-left: 2px;
+}
+
+.description-manga{
+    color: rgb(37, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.h3-position{
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+}
+
+.h3-position::after{
+    content:" ";
+    position: absolute;
+    display: block;
+    right: 40%;
+    width: 20%;
+    height: 2px;
+    background-color: rgb(73, 69, 69) ;
+}
+
+.presentation-comic{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    column-gap: 50px;
+}
+
+.description-comic{
+    margin-bottom: 10px;
+    color: rgb(37, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.exemple-comic{
+    height: 360px;
+    border-radius: 8px;
+    margin-left: 2px;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col::before{
+    content: "";
+    position: absolute;
+    left: 6;
+    margin-top: 20px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 65px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.box-contact-us{
+	height: 100vh;
+	width: 100%;
+}
+
+.container-contact{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container-contact:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("https://th.bing.com/th/id/R.33d02c67b4a6e90abe2d7a58f764edd8?rik=gA%2fesQP2%2f0%2b5uw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f12%2fimage-de-nature-9.jpg&ehk=4oiNLekZZh50XowVszovQmq8w%2fH0S6GIwQYqeKknWaM%3d&risl=&pid=ImgRaw&r=0") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("https://th.bing.com/th/id/R.33d02c67b4a6e90abe2d7a58f764edd8?rik=gA%2fesQP2%2f0%2b5uw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f12%2fimage-de-nature-9.jpg&ehk=4oiNLekZZh50XowVszovQmq8w%2fH0S6GIwQYqeKknWaM%3d&risl=&pid=ImgRaw&r=0") no-repeat center;
+	background-size: cover;
+	height: 500px;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2Contact-us{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+  
+    box-sizing: border-box;
+    padding: var(--gap);
+  
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+  
+.image-grid > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+  
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+  
+@media screen and (max-width: 1024px) {
+    .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+}
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+@media only screen and (max-width:390px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .Icon{
+        width: 20%;
+        margin-left: 3px;
+    }
+    
+    .main-nav ul li {
+        list-style: none;
+    }
+
+    .main-nav ul li a {
+        text-align:right;
+        text-decoration: none;
+        color:#000;
+        font-size: 18px;
+        font-size: Arial;
+    }
+
+    .main-nav ul li a:hover {
+        color: #ff5ea2;
+    }
+
+    
+
+    
+}
